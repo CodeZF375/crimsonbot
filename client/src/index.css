@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  :root {
+    --background: 225 6% 13%;
+    --foreground: 220 13% 91%;
+    
+    --card: 220 7% 18%;
+    --card-foreground: 220 13% 91%;
+    
+    --popover: 220 7% 18%;
+    --popover-foreground: 220 13% 91%;
+    
+    --primary: 235 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 227 58% 65%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 217 8% 28%;
+    --muted-foreground: 220 9% 70%;
+    
+    --accent: 216 7% 14%;
+    --accent-foreground: 220 13% 91%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 216 7% 25%;
+    --input: 216 7% 25%;
+    --ring: 227 58% 65%;
+    
+    --sidebar-background: 222 7% 16%;
+    --sidebar-foreground: 220 13% 91%;
+    --sidebar-primary: 235 85% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 216 7% 14%;
+    --sidebar-accent-foreground: 220 13% 91%;
+    --sidebar-border: 216 7% 25%;
+    --sidebar-ring: 227 58% 65%;
+    
+    --radius: 0.5rem;
+  }
+  
+  body {
+    @apply font-sans antialiased bg-[#36393F] text-[#B9BBBE];
+  }
+}
+
+@layer utilities {
+  .bg-discord-dark {
+    background-color: #36393F;
+  }
+  
+  .bg-discord-darker {
+    background-color: #2F3136;
+  }
+  
+  .text-discord-light {
+    color: #B9BBBE;
+  }
+  
+  .text-discord-lightest {
+    color: #FFFFFF;
+  }
+  
+  .text-discord-primary {
+    color: #5865F2;
+  }
+  
+  .bg-discord-primary {
+    background-color: #5865F2;
+  }
+  
+  .bg-discord-primary\/20 {
+    background-color: rgba(88, 101, 242, 0.2);
+  }
+  
+  .bg-discord-primary\/30 {
+    background-color: rgba(88, 101, 242, 0.3);
+  }
+  
+  .bg-discord-danger {
+    background-color: #F04747;
+  }
+  
+  .bg-discord-danger\/20 {
+    background-color: rgba(240, 71, 71, 0.2);
+  }
+  
+  .bg-discord-danger\/30 {
+    background-color: rgba(240, 71, 71, 0.3);
+  }
+  
+  .text-discord-danger {
+    color: #F04747;
+  }
+  
+  .text-discord-secondary {
+    color: #7289DA;
+  }
+  
+  .bg-discord-success {
+    background-color: #43B581;
+  }
+}
